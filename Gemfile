@@ -6,6 +6,7 @@ gem 'middleman-inliner'
 gem 'middleman-dotenv'
 
 gem 'middleman-gh-pages'
+gem 'middleman-s3_sync'
 
 gem 'slim'
 gem 'sass'
