@@ -8,7 +8,7 @@ header.header.header--static
         = link_to 'Concept', '#concept', data: { scroll: true }, class: 'header-menu-item'
         = link_to 'Fonctionnement', '#operation', data: { scroll: true }, class: 'header-menu-item'
         = link_to 'Tarif', '#pricing', data: { scroll: true }, class: 'header-menu-item'
-        = link_to 'Réserver maintenant', '#contact', data: { scroll: true, focus: 'input-full_name' }, class: 'header-menu-item button'
+        = link_to 'Contactez-moi maintenant', '#contact', data: { scroll: true, focus: 'input-full_name' }, class: 'header-menu-item button'
 
 header.header.header--fixed
   .wrapper
@@ -20,13 +20,13 @@ header.header.header--fixed
         = link_to 'Concept', '#concept', data: { anchor: 'concept', scroll: true }, class: 'header-menu-item'
         = link_to 'Fonctionnement', '#operation', data: { anchor: 'operation', scroll: true }, class: 'header-menu-item'
         = link_to 'Tarif', '#pricing', data: { anchor: 'pricing', scroll: true }, class: 'header-menu-item'
-        = link_to 'Réserver maintenant', '#contact', data: { anchor: 'contact', scroll: true, focus: 'input-full_name' }, class: 'header-menu-item button'
+        = link_to 'Contactez-moi maintenant', '#contact', data: { anchor: 'contact', scroll: true, focus: 'input-full_name' }, class: 'header-menu-item button'
 
 .hero   
   .wrapper
     .hero-content
       h1.hero-title Vivez Mieux
-      h3.hero-subtitle Avec votre assistante personnelle.
+      h3.hero-subtitle Avec votre assistante personnelle sur Bordeaux.
 
 section.section#concept
   .wrapper
@@ -57,6 +57,8 @@ section.section#concept
         .concept-list-item
           = icon_tag 'check'
           | faire une balade
+    .section-content
+      h3.concept-title Discrétion et confidentialité assurées
 
 section.section#operation
   .wrapper
@@ -84,7 +86,10 @@ section.section#pricing
         h2.price-title 
           | 18
           sup €
-        p.price-text l’heure avec Chéque CESU ou 34€ sans Chéque
+        p.price-text
+          | l'heure avec dispositif CESU
+          br
+          | 25€ hors dispositif CESU
       .pricing-list
         .pricing-list-item
           = icon_tag 'clock', class: 'pricing-list-item-icon', width: 48, height: 48
@@ -99,7 +104,7 @@ section.section#pricing
 section.section#contact
   .wrapper
     .section-heading
-      h2.section-heading-title Réserver maintenant
+      h2.section-heading-title Contactez-moi
     
     .section-content.contact-content
       form.contact-form
@@ -123,7 +128,7 @@ section.section#contact
           = image_tag 'cathy.jpg', width: 165, height: 165
           .contact-cathy-icon = icon_tag 'phone', width: 48, height: 48
           = link_to '07  716  503  59', 'tel:+33771650359', class: 'contact-cathy-title'
-          .contact-cathy-text De 8:00 à 18:00 en semaine.
+          .contact-cathy-text Sur Bordeaux de 8:00 à 18:00 en semaine.
 
 footer.footer
   .wrapper
