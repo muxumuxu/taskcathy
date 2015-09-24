@@ -1,0 +1,64 @@
+@import "compass/css3/transition"
+
+*
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+html, body
+  position: relative
+  width: 100%
+  height: 100%
+  min-width: 100%
+  min-height: 100%
+  -webkit-overflow-scrolling: touch
+
+body
+  font-family: $font
+  margin: 0
+  color: $text_color
+  background-color: $light_blue
+
+.wrapper
+  width: 100%
+  max-width: 904px
+  margin: auto
+  padding: 0 20px
+
+.section
+  padding: 120px 0
+
+  &-heading
+    text-align: center
+    color: $black
+    &-title
+      font-weight: 300
+      font-size: 40px
+      line-height: 50px
+      margin: 0 0 0
+    &-subtitle
+      font-weight: 300
+      font-size: 26px
+      margin: 0
+  &-separator
+    width: 540px
+    margin: 60px auto
+    border: none
+    border-top: 1px solid #D2DEE1
+
+.icon
+  fill: currentColor
+  vertical-align: middle
+  vertical-align: sub
+
+.button
+  font-family: $font
+  cursor: pointer
+  font-size: 16px
+  font-weight: 500
+  padding: 8px 10px 6px
+  background: $blue
+  color: white !important
+  border-radius: 2px
+  white-space: nowrap
+  border: none

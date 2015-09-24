@@ -1,0 +1,24 @@
+.hero
+  background: url(image_path('hero.jpg')) no-repeat center center
+  background-size: cover
+  height: 564px
+  text-align: center
+  color: white
+  overflow: hidden
+  .wrapper
+    height: 100%
+    +display-flex
+    +flex-direction(column)
+    +align-items(center)
+    +justify-content(center)
+
+  &-title
+    font-weight: 500
+    font-size: 40px
+    letter-spacing: 4px
+    text-transform: uppercase
+    margin: 0 0 0
+  &-subtitle
+    font-weight: 300
+    font-size: 26px
+    margin: 0
