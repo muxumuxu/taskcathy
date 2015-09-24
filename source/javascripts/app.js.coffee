@@ -19,7 +19,7 @@ isHeaderFixed = ->
   else
     fixedHeader.classList.remove fixedHeaderClass
 
-sections = document.querySelectorAll('body > .section')
+sections = document.querySelectorAll('.content-wrapper > .section')
 sectionsLink = document.querySelectorAll('.header--fixed .header-menu-list [data-anchor]')
 sectionsOffset = {}
 for section in sections

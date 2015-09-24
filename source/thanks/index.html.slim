@@ -1,14 +1,14 @@
 header.header.header--fixed.header--fixed--shown
   .wrapper
-    = link_to '/', class: 'logo', data: { scroll: true } do
+    = link_to '/#top', class: 'logo' do
       = svg_tag 'logo', width: 134, height: 16
 
     nav.header-menu
       .header-menu-list
-        = link_to 'Concept', '#concept', data: { anchor: 'concept', scroll: true }, class: 'header-menu-item'
-        = link_to 'Fonctionnement', '#operation', data: { anchor: 'operation', scroll: true }, class: 'header-menu-item'
-        = link_to 'Tarif', '#pricing', data: { anchor: 'pricing', scroll: true }, class: 'header-menu-item'
-        = link_to 'Contactez-moi maintenant', '#contact', data: { anchor: 'contact', scroll: true, focus: 'input-full_name' }, class: 'header-menu-item button'
+        = link_to 'Concept', '/#concept', class: 'header-menu-item'
+        = link_to 'Fonctionnement', '/#operation', class: 'header-menu-item'
+        = link_to 'Tarif', '/#pricing', class: 'header-menu-item'
+        = link_to 'Contactez-moi maintenant', '/#contact', class: 'header-menu-item button'
 
 section.section#thanks
   .wrapper
