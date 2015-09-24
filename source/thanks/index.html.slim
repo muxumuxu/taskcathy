@@ -1,0 +1,31 @@
+header.header.header--fixed.header--fixed--shown
+  .wrapper
+    = link_to '#top', class: 'logo', data: { scroll: true } do
+      = svg_tag 'logo', width: 134, height: 16
+
+    nav.header-menu
+      .header-menu-list
+        = link_to 'Concept', '#concept', data: { anchor: 'concept', scroll: true }, class: 'header-menu-item'
+        = link_to 'Fonctionnement', '#operation', data: { anchor: 'operation', scroll: true }, class: 'header-menu-item'
+        = link_to 'Tarif', '#pricing', data: { anchor: 'pricing', scroll: true }, class: 'header-menu-item'
+        = link_to 'Contactez-moi maintenant', '#contact', data: { anchor: 'contact', scroll: true, focus: 'input-full_name' }, class: 'header-menu-item button'
+
+section.section#thanks
+  .wrapper
+    .section-heading.thanks-content
+      .contact-cathy
+        .contact-cathy-image
+          = image_tag 'cathy.jpg', width: 165, height: 165
+      h2.section-heading-title Message envoyé !
+      p.section-heading-subtitle Je vous contacte dans les prochaines 24h. Bonne journée !
+
+footer.footer
+  .wrapper
+    .copyright
+      | © TaskCathy
+    
+    nav.footer-menu
+      .footer-menu-list
+        = link_to 'Concept', '#concept', data: { scroll: true }, class: 'footer-menu-item'
+        = link_to 'Fonctionnement', '#operation', data: { scroll: true }, class: 'footer-menu-item'
+        = link_to 'Tarif', '#pricing', data: { scroll: true }, class: 'footer-menu-item'

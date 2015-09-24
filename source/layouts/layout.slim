@@ -22,6 +22,7 @@ html lang='fr'
   body#top
     = inline_svg 'images.svg'
     
-    = yield
+    .content-wrapper
+      = yield
 
     = javascript_include_tag 'app'
