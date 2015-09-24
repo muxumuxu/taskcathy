@@ -42,6 +42,9 @@ configure :build do
   # Use relative URLs
   activate :relative_assets
 
+  activate :asset_host
+  set :asset_host, '//taskcathy.com'
+
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
 end
