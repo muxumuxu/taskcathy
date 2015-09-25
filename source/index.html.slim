@@ -110,14 +110,14 @@ section.section#contact
       form.contact-form action="//fwd.muxumuxu.com/forms/ea9a62e1-a935-4a0a-8119-fdee8e2644d2" method="POST"
         .contact-form-input
           label for="input-full_name" Nom et prénom
-          input#input-full_name type="text" name="full_name"
+          input#input-full_name type="text" name="full_name" required=true
         .contact-form-input--separator
         .contact-form-input
           label for="input-phone" Numéro de téléphone
-          input#input-phone type="tel" name="phone"
+          input#input-phone type="tel" name="phone" required=true
         .contact-form-input.contact-form-input--full
           label for="input-message" Votre besoin
-          textarea#input-message name="message" rows="8"
+          textarea#input-message name="message" rows="8" required=true
         
         input.button type="submit" value="Envoyer"
       
