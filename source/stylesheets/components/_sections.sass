@@ -28,7 +28,7 @@
     padding: 0 74px
     border-right: 1px solid rgba(white, .3)
     &:last-child
-      border-right: none
+      border: none
     &-title
       margin: 0 0 10px
       font-weight: 500
@@ -94,7 +94,7 @@
   &-list
     +display-flex
     +flex-direction(row)
-    +align-items(center)
+    +align-items(flex-start)
     +justify-content(center)
     &-item
       +flex(1)
@@ -128,6 +128,8 @@
       font-size: 14px
       color: $black
       margin-bottom: 4px
+    input, textarea
+      -webkit-appearance: none
     input[type="text"], input[type="tel"], textarea
       width: 100%
       background: white
@@ -172,3 +174,33 @@
         font-size: 18px
         color: $grey
         line-height: 24px
+
+@media (max-width: 768px)
+  .concept
+    &-content
+      +flex-direction(column)
+    &-list
+      padding: 30px 0
+      margin: auto
+      border-right: none
+
+  .operation
+    &-content
+      +flex-direction(column)
+    &-step
+      &-separator
+        +transform(rotate(90deg))
+        margin: 60px 0
+
+  .pricing
+    &-list
+      +flex-direction(column)
+      +align-items(center)
+      &-item
+        margin-bottom: 30px
+        &:last-child
+          margin-bottom: 0
+
+  .contact
+    &-form
+      +flex-direction(column)
